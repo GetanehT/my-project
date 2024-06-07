@@ -12,7 +12,7 @@
 
 
 body {
-     background-color: #3083f0;
+     
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
 }
 /* Header */
 header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -34,6 +34,14 @@ header {
 
 }
 
+h1 {
+
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #242424;
+}
+
 header a {
             text-decoration: none;
             color: inherit;   
@@ -41,11 +49,11 @@ header a {
 
  nav {
      position: absolute;
-     background-color: aqua;
+     background-color: #ffffff;
      width: 100%;
      left: 0;
      padding: 0 1rem;
-     box-shadow: 0 2px 2px #6b6b6b;
+     box-shadow: 0 2px 2px #3a3a3a;
      display: none;
      top: 100%;
 
@@ -61,23 +69,16 @@ header a {
     display: none;
 }
 
-.nav-toggle-label {
+.nav-toggle-lable {
     font-size: 2rem;
 }
 .active {
     border-bottom: 1px solid #6b6b6b;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    padding: 4px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #242424;
-}
 #menu {
    font-size: 110%;
-   letter-spacing: 3px;
+   letter-spacing: 4px;
    list-style-type: none;
 }
 
@@ -87,24 +88,46 @@ h1 {
 
 }
 .active {
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid #ffffff;
 }
 
 /*main content*/
 main {
     background-color: lightblue;
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 800px;
+    
+}
+
+/* footer */
+#social-network {
+    text-align: center;
+    padding: 20px 0;
+    display: flex; 
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-network i {
+    font-size:200%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 /* Add media queries for responsiveness tablet and larger (768px and upto)*/
+
 @media screen and (max-width: 500px) {
     /* header */ 
-    nav {
-      display : block;
-      position  : relative;
-      box-shadow:  none;
-      width:  fit-content;
-      padding-right: 1rem;
-    }
-      
+     nav {
+            display: block;
+            position: relative;
+            box-shadow: none;
+            width: fit-content;
+            padding-right: 1rem;
+            
+        }
+        #menu {
+            display: flex;
+        }
+        #menu >li {
+            padding-left:  1rem;
+        }
     }
