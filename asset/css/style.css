@@ -10,16 +10,16 @@
 
 /* Generic styles */
 
-
 body {
-     
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
     font-family: 'Roboto', sans-serif;
 }
+
 /* Header */
+
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -30,7 +30,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-  
 
 }
 
@@ -92,8 +91,9 @@ header a {
 }
 
 /*main content*/
+
 main {
-    background-color: lightblue;
+    background-color: rgb(5, 106, 139);
     flex: 1 0 auto;
     margin-top: 800px;
     
@@ -130,4 +130,19 @@ main {
         #menu >li {
             padding-left:  1rem;
         }
+
+        .nav-toggle-lable {
+            display: none;
+            /*main content */
+            main {
+                margin-top: 80ox;
+            }
+        }
+
+}
+ /* large devices and desktop, 992px up to ) */
+@media screen and (min-width:992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
+}
